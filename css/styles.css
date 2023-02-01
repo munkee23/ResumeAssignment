@@ -1,0 +1,80 @@
+/* colors used
+0d1321 = black, 
+1d2d44 = navy blue,
+3e5c76 = dark bluish gray,
+748cab = light bluish gray
+f0ebd8 = beige
+4d194d = purple
+3e1f47= dark purple
+312244 = darker purple
+1b3a4b = turquoise
+144552
+006466
+*/
+
+
+html{
+  box-sizing: border-box;
+  color: white;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:#f0ebd8  ;
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  padding-left: 40px;
+  margin: 0;
+  font-size: 10rem;
+  color:white;
+  background-color:#4d194d;
+  text-shadow: 
+   /* create highlights on the left */
+    0px 0.5px 0px rgba(255,255,255, 0.2), 
+    -1px 1px 0px rgba(255,255,255, 0.2), 
+    -2px 1px 0px rgba(255,255,255, 0.2), 
+    /* create the long shadow on the right */
+    30px 1px 0px rgba(0,0,0, 0.2),
+    /* create the shadow of the font on the right*/
+    2px 1px 0px rgba(0,0,0, 1);
+  }
+
+
+.container {
+  overflow: hidden;
+}
+.sections{
+  float: left;
+  margin-top: 20px;
+  padding-bottom: 100%;
+
+  margin-bottom: -100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+header{
+  background-color: #4d194d;
+  text-align: center;
+  font-size: large;
+  
+}
+section{
+  background-color: #1b3a4b;
+
+}
+footer{
+background-color: #3e1f47;
+}
